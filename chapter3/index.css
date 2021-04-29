@@ -140,3 +140,13 @@
   flex: 1;
   border: 1px solid #979797;
 }
+
+.title-page-4 {
+  color: #ffb548;
+  letter-spacing: 2px;
+}
+
+.desc-page-4 {
+  color: white;
+  letter-spacing: 2px;
+}
