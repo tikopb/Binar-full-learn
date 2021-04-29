@@ -43,7 +43,7 @@
 }
 
 .prt-page5 {
-  background-image: url("img/requirements.png");
+  background-image: url("img/top-score-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
@@ -130,4 +130,13 @@
   justify-content: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.row-page4 {
+  display: flex;
+}
+
+.row-page4 > div {
+  flex: 1;
+  border: 1px solid #979797;
 }
