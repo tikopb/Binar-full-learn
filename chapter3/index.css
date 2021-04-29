@@ -83,12 +83,6 @@
 }
 
 .text-first {
-  position: absolute;
-  height: 73.12px;
-  left: 9.22%;
-  right: 10.47%;
-  top: calc(50% - 73.12px / 2 - 130.06px);
-
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -102,38 +96,38 @@
 }
 
 .text-second {
-  position: absolute;
-  left: 25%;
-  right: 29.66%;
-  top: 46.23%;
-  bottom: 50.89%;
-
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
 
   letter-spacing: 2px;
 
-  color:white;
+  color: white;
 }
 
 .base-button {
-  position: absolute;
-  left: 40.83%;
-  right: 41.09%;
-  top: 55.07%;
-  bottom: 38.68%;
-  
-  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
   border-radius: 4px;
+  align-content: center;
+  margin-left: 40vw;
+  margin-top: 10px;
 }
 
-.content{
-  display: flex;
+.content {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
+.text-the-story {
+  font-weight: bold;
+  font-size: 12px;
+
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
