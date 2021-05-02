@@ -15,26 +15,6 @@
     letter-spacing: 0.1em;
 }
 
-h1{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 33px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-}
-
-h3{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-}
-
 .prt-page1 {
     background-image: url("img/main-bg.jpg"),
       linear-gradient(to bottom, black, rgba(255, 255, 255, 0));
@@ -219,4 +199,61 @@ h3{
     align-content: center;
     font-weight: bold;
     content: 20px;
+}
+
+hr.new4 {
+    border: 1px solid white;
+  }
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
+@media screen and (min-width: 601px) {
+    h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+    
+    h3{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+    
+    h3{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+    
+    #fadeshow1 {
+        display: none;
+    }
 }
