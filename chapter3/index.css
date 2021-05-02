@@ -57,7 +57,6 @@ h3{
 
 .footer-page-1{
     height: 5em;
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -212,4 +211,12 @@ h3{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: white;
+}
+
+.sub-base-button{
+    background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+    border-radius: 4px;
+    align-content: center;
+    font-weight: bold;
+    content: 20px;
 }
