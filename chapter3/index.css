@@ -55,6 +55,18 @@ h3{
     justify-content: center;
 }
 
+.footer-page-1{
+    height: 5em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .base-button{
     background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
     border-radius: 4px;
@@ -102,6 +114,16 @@ h3{
     align-items: center;
     justify-content: center;
     padding-top: 150px;
+}
+
+.h1-page-3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFB548; 
 }
 
 .prt-page4 {
