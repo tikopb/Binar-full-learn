@@ -150,6 +150,7 @@
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
+  height: 100vh;
 }
 
 .content-page-5 {
@@ -264,7 +265,9 @@ hr.new4 {
     line-height: 14px;
     letter-spacing: 1px;
   }
+}
 
+@media screen and (max-width: 1000px) {
   #fadeshow1 {
     display: none;
   }
