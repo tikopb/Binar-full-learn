@@ -1,0 +1,12 @@
+.all-page {
+  background-color: #9c835f;
+  height: 100vh;
+}
+
+.header-text {
+  color: #f9b23d;
+  font-size: 36px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+}
