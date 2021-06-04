@@ -1,6 +1,5 @@
 .all-page {
   background-color: #9c835f;
-  height: 100vh;
 }
 
 .header-text {
@@ -17,5 +16,16 @@
   text-align: center;
 }
 
-.result-board {
+.game-text-content {
+  font-weight: bold;
+}
+
+.hand-container {
+  padding: 10px;
+  height: 150px;
+}
+
+.hand-img-size {
+  width: 125px;
+  height: 125px;
 }

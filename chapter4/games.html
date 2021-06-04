@@ -18,8 +18,10 @@
        <div class="all-page">
            <!-- header -->
                 <div class="row" style="padding-top: 10px; padding-left: 50px;">
-                    <div class="col-sm-1"> <a href="index.html" class="header-text">  < </a> </div> 
-                    <div class="col-sm-1"><img src="img/games-logo.png" width="72px" height="72px"></div>
+                    <div class="col-sm-2"> 
+                        <a href="index.html" class="header-text">  < </a> 
+                        <img src="img/games-logo.png" width="72px" height="72px">
+                    </div>
                     <div class="col-sm-5 header-text">ROCK PAPER SCISSORS</div>
                     <div class="col-sm-5"> </div>
                 </div>
@@ -30,43 +32,47 @@
                 <div class="col-sm-12">
                     <div class="row">
                        <div class="col-sm-4">
-                           <div class="col-sm-12">
+                           <div class="col-sm-12 game-text-content">
                                PLAYER 1
                            </div>
-                           <div class="col-sm-12">
-                               <img src="img/batu 1.png">
+                           <div class="col-sm-12 hand-container" id="batu1Container">
+                               <a href="#" id="batu1">
+                                   <img class="hand-img-size" src="img/batu 1.png">
+                               </a>
                            </div>
-                           <div class="col-sm-12">
-                                <img src="img/kertas 1.png">
+                           <div class="col-sm-12 hand-container" id="kertas1Container">
+                                <img id="kertas1" class="hand-img-size" src="img/kertas 1.png">
                             </div>
-                            <div class="col-sm-12">
-                                <img src="img/gunting 1.png">
+                            <div class="col-sm-12 hand-container" id="gunting1Container">
+                                <img id="gunting1" class="hand-img-size" src="img/gunting 1.png">
                             </div>
                        </div>
                        
                        <!-- result board -->
                        <div class="col-sm-4">
-                           <img src="img/VS.png">
+                           <img id="result" src="img/VS.png">
                        </div>
                        <!-- result board end -->
                        
                        <div class="col-sm-4">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 game-text-content">
                             COM
                         </div>
-                        <div class="col-sm-12">
-                            <img src="img/batu 2.png">
+                        <div class="col-sm-12 hand-container">
+                            <img id="batu2" class="hand-img-size" src="img/batu 2.png">
                         </div>
-                        <div class="col-sm-12">
-                             <img src="img/kertas 2.png">
+                        <div class="col-sm-12 hand-container">
+                             <img id="kertas2" class="hand-img-size" src="img/kertas 2.png">
                          </div>
-                         <div class="col-sm-12">
-                             <img src="img/gunting 2.png">
+                         <div class="col-sm-12 hand-container">
+                             <img id="gunting2" class="hand-img-size" src="img/gunting 2.png">
                          </div>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <img src="img/refresh 2.png">
+                <div class="col-sm-12" >
+                    <a href="">
+                        <img src="img/refresh 2.png">
+                    </a>
                 </div>
                    
                </div>
@@ -74,5 +80,7 @@
            <!-- content end -->
        </div>
     </body>
+    
+    <script src="games.js"></script>
 </html>
   
