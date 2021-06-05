@@ -1,5 +1,6 @@
 .all-page {
   background-color: #9c835f;
+  height: 100vh;
 }
 
 .header-text {
@@ -28,4 +29,5 @@
 .hand-img-size {
   width: 125px;
   height: 125px;
+  border-radius: 25px;
 }
