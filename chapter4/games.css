@@ -31,3 +31,8 @@
   height: 125px;
   border-radius: 25px;
 }
+
+.result-container{
+  justify-content: center;
+  padding-top: 100px;
+}
