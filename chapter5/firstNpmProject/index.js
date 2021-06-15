@@ -1,34 +1,28 @@
-const chalk = require("chalk")
-const os = require("os")
-const fs = require("fs")
-const orang = require("./orang.json")
-const Calculation = require("./utils/calculation.js") // <-local module
+const http = require("http");
+const fs = require("fs");
 
-console.log(Calculation(3,4))
-
-console.log(orang.name)
-console.log(chalk.redBright('Hello world!'));
-
-function writeANewFile() {
-    fs.writeFileSync('./dataUser.txt', 'Testing write File')
+// on request when is html code 
+function onRequestHtml(request, response){
+    response.writeHead(200, { "Content-Type": "text/html"})
+    fs.readFile("./index.html", null, (erorr, data) => {
+        if(erorr) {
+            response.writeHead(404)
+            response.write("File not Found")
+        }else {
+            response.write(data)           
+        }
+        response.end()
+    })
 }
 
-function readAFile(){
-    return fs.readFileSync('./dataUser.txt', 'utf-8')
+// on request when return is json data
+function onRequestJSON(request, response){
+    response.writeHead(200, { "Content-Type": "application/json"})
+    const data = {
+        name: "Tiko Putra",
+        age: 26 
+    }
+    response.end(JSON.stringify(data))
 }
 
-writeANewFile()
-console.log(readAFile())
-
-const buatOrang = function writeAJsonFile(orang){
-    fs.writeFileSync('./orang.json', JSON.stringify(orang))
-    console.log(chalk.greenBright('success import'))
-    return orang;
-}
-
-const tiko = buatOrang({
-    name :'Tiko',
-    age : 22,
-    adress : 'Tlogosari'
-})
-
+http.createServer(onRequestJSON).listen(8000)
