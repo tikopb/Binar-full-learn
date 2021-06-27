@@ -5,7 +5,7 @@ const fs =require('fs')
 const { userInfo } = require('os')
 
 const app = express()
-const port = 8081
+const port = 8080
 
 app.set('view engine', 'ejs')
 
@@ -75,9 +75,9 @@ app.get('/register', (req,res) => {
 })
 
 app.post('/register', (req,res) => { 
-    const {email, password} = req.body
+    // const {email, password} = req.body
     
-    users.push({email, password})
+    // users.push({email, password})
     
     res.redirect('/')
 })
@@ -102,5 +102,5 @@ app.use(function(req,res){
 
 //create server start 
 app.listen(port, () => {
-    console.log(`example app in port ${port}`)
+    console.log(`http://localhost:${port}`)
 })
