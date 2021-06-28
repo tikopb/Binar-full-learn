@@ -11,13 +11,12 @@ app.get('/api/v1/users', (req,res)  => {
     res.status(200).json(users)
 })
 
-app.post('/api/v1/users/put', (req,res)  => {
-    const{username, password, fullname} = req.body
+app.post('/api/v1/users/posts', (req,res)  => {
+    const userNew = {username: req.body.username, password: req.body.password, fullname: req.body.fullname}
     const id = users[users.length - 1].id + 1
     const user = {
         id, username, password, fullname
     }
-
     users.push(user)
     res.status(201).json(user)
 })
@@ -31,7 +30,6 @@ app.get('api/v1/users/:id', (req,res) => { // mencari data json base on id
         res.status(200).send("NO DATA")
     }
 })
-
 
 //put data
 app.put('api/v1/users/:id', (req,res) => {
