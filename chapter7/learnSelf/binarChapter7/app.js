@@ -38,4 +38,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+function test (pertama, () => )
+
 module.exports = app;
